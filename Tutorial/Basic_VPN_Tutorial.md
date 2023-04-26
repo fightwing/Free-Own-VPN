@@ -1,4 +1,4 @@
-# Basic VPN Tutorial   
+# Basic VPN Setup Tutorial   
 ## **Part 1**: Get a free AWS EC2 to run the VPN service  
 
 1. Sign up for a new AWS account to get the free tier. Just follow AWS guide.  
