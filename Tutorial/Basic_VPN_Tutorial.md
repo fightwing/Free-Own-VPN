@@ -41,7 +41,7 @@
 1. Connect to your instance.
 ![Image](./Images/connect_instance.png)  
 
-2. Next we install outline VPN server in docker.  
+2. Next we install outline VPN server in docker. Execute the following commands one by one in the console.  
 
     1. `` sudo — sh -c ‘apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y’ ``  
 
@@ -55,3 +55,31 @@
 
     6. ``sudo wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh | bash``
     
+3. Finally you maybe see this. Firewall blocked. Don't worry. Let's us configure the security group. Keep the console here and we will use the messages later.
+![Image](./Images/start_result.png)
+
+4. Go to security group page.  
+![Iamge](./Images/security_group.png)  
+
+5. Edit inbound rules, add three rules according to the port and traffic type prompted by the console before.
+![Image](./Images/add_rules.png)
+
+6. Now we have completed the setup of the VPN server, copy the apiUri in green and you can close AWS console now.
+
+
+## Part 3: Download Outline manager and Outline client.
+1. Go to the official website of [Outline](https://getoutline.org/).  
+
+2. Download the Outline Manager on your computer and the Outline client on where you want to use VPN.  
+![Image](./Images/Outline.png)
+
+3. Configure the Outline Manager first.
+    1. Choose AWS.  
+    ![Image](./Images/choose_AWS_in_Outline_manager.png)  
+
+    2. Paste your apiUri here and done.  
+    ![Image](./Images/Outline_Manager_done.png)
+
+4. Now you can use your access key in the Outline cline to cross the wall.
+
+## Finish
