@@ -34,3 +34,24 @@
     ![Image](./Images/Configure_storage.png)
 
     8. Click the Launch instance button to get your own free EC2 instance.
+
+
+## Part 2: Start setup VPN service on your EC2
+
+1. Connect to your instance.
+![Image](./Images/connect_instance.png)  
+
+2. Next we install outline VPN server in docker.  
+
+    1. `` sudo — sh -c ‘apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y’ ``  
+
+    2. ``sudo curl -sS https://get.docker.com/ | sh``  
+
+    3. ``sudo systemctl start docker``  
+
+    4. ``sudo systemctl enable docker``  
+
+    5. ``sudo sudo systemctl status docker``
+
+    6. ``sudo wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh | bash``
+    
