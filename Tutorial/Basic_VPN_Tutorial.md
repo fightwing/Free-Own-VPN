@@ -55,7 +55,7 @@
 
     6. ``sudo wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh | bash``
     
-3. Finally you maybe see this. Firewall blocked. Don't worry. Let's us configure the security group. Keep the console here and we will use the messages later.
+3. Finally you maybe see this. Firewall blocked. Don't worry. Let's configure the security group. Keep the console here and we will use the messages later.
 ![Image](./Images/start_result.png)
 
 4. Go to security group page.  
