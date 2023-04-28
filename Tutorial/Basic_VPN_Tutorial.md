@@ -51,7 +51,7 @@
 
     4. ``sudo systemctl enable docker``  
 
-    5. ``sudo sudo systemctl status docker``
+    5. ``sudo systemctl status docker``
 
     6. ``sudo wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh | bash``
     
